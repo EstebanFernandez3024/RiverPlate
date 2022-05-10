@@ -57,7 +57,7 @@ h1:hover{
 header nav ul li {
     border-radius: 20px;
     display: inline-block;
-    background-color: rgb(255, 0, 0); 
+    background-color: red; 
      text-align: center;
      margin-left: 1cm;
      margin-right: 20px;
