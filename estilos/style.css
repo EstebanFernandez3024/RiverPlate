@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cabeza{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "encabezado encabezado"
+    "navhome navhome" ;
+text-align: center;}
+
+
+#encabezado{
+    grid-area: encabezado;
+}
+
+
+#navhome{
+    grid-area: navhome;
+}
+
+/*ENCABEZADO*/ 
+
+#encabezado{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo{
+    padding: 30px;
+    padding-left: 70px;
+    margin: 0;
+}
+.titulo{
+ 
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+
+font-size: 50px;
+
+}
+h1:hover{
+    color: red;
+    transition-duration: 2s;
+} 
+
+
+
+/*MENU*/
+header nav ul li {
+    border-radius: 20px;
+    display: inline-block;
+    background-color: rgb(255, 0, 0); 
+     text-align: center;
+     margin-left: 1cm;
+     margin-right: 20px;
+     margin-bottom: 0.5cm;
+transition: 2s;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+li a{
+    
+    color: white;
+    padding: 20px;
+    display: block;
+    margin-left: 25px;
+    margin-right: 25px;
+  
+}
+ul{
+   
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header li:hover{
+     transform: scale(1.5);
+     transition-timing-function: ease;
+     
+ }
+ header li a:hover{
+    color: black;
+    transition-duration: 1s;}
+
+
+/*footer*/
+footer{
+height: 100%;
+    padding: 0;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+footer div p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "info logofooter mensajefooter" ;
+    text-align: center;
+    }
+    #info{
+        grid-area: info;
+    }
+    #logofooter{
+        grid-area: logofooter;
+    }
+#mensajefooter{
+    grid-area: mensajefooter;
+    padding-top: 25px;
+}
+h2{
+    padding: 10px;}
+
+    .derechos{
+        text-align: center;
+        color: rgb(230, 18, 18);
+    }
+
+
+/*historia*/
+.videohistoria{
+    display: flex;
+    margin: 2%;
+}
+.escudos{
+    margin-left: 5cm;
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+div p {
+    text-align: auto;
+}
+.escudos p{
+    font-size: 1cm;
+    padding-left: 1cm;
+    padding-bottom: 1cm;
+}
+.historia{ 
+    border: 5px solid red ;
+    margin: 60px;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        
+    }
+    /*home*/
+    .imgg2{
+        margin: 2%;
+    }
+    .containerhome{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 20% 60% 20% ;
+     
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        "sidebar contenido1 sidebar2 "
+        "sidebar contenido2 sidebar2"
+        "sidebar contenido3 sidebar2";
+        grid-gap: 1px;
+        font-weight: 800;
+        font-size: 15px;
+        color: red;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #sidebar{
+        grid-area: sidebar;
+        text-align: center;
+        color: black;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 1cm;
+        margin-bottom: auto;
+    }
+    #sidebar2{
+        grid-area: sidebar2;
+        text-align: center;
+        color: black;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 1cm;
+        margin-bottom: auto;
+    }
+    #contenido1{
+        grid-area: contenido1;
+        margin-top: 1cm;
+        border: 10px dotted rgb(148, 148, 148);
+        text-align: center;
+        margin-bottom: 1cm;
+        color: black;
+        font-size: 50px;
+        padding: 10px;
+
+    }
+    #contenido2{
+        grid-area: contenido2;
+        margin-top: 1cm;
+        border: 10px dotted rgb(158, 155, 155);
+        text-align: center;
+        margin-bottom: 1cm;
+        color: black;
+        font-size: 50px;
+        padding: 10px;
+
+    }
+    #contenido3{
+        grid-area: contenido3;
+        margin-top: 1cm;
+        border: 10px dotted rgb(142, 142, 142);
+        text-align: center;
+        margin-bottom: 1cm;
+        color: black;
+        font-size: 50px;
+        padding: 10px;
+    }
+
+.cabeza{
+    margin-bottom: -125px;
+}
+
+
+
+
+
+/*contactanos*/
+
+.formulario{
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left:8cm;
+    margin-right: 8cm;
+    padding: 2cm;
+    font-size: 1cm;
+    border-radius: 3cm;
+
+}
+.h1contacto{
+    background-color: red;
+    border-radius:3cm ;
+}
+/*JUGADORES*/
+
+.jugadores{
+    
+    margin-left: 3cm;
+    margin-top: 3cm;
+    margin-right: 1cm;
+    margin-bottom: 1cm;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.jugadores p{
+    border: 1px solid black;
+}
+
+.video{
+    border-radius: 20px;
+}
+
+.imgg2:hover{
+    transform: scale(1.1);
+    transition-duration: 5s;
+}
+
+@media (max-width: 1400px) {
+    header nav ul li{
+        display: block;
+    }}
+    
+    @media (max-width: 1400px){
+        .cabeza{
+            display: block;
+            margin-bottom: 1cm;
+        }
+        .jugadores{
+            display: block;
+        }
+        
+        footer{
+            display: block;
+        }
+        .containerhome{
+            display: block;
+        }
+        .escudos{
+            display: block;
+        }
+        .videohistoria{
+            display: block;
+        }
+        #encabezado{
+            display: block;
+            text-align: center;
+            height: auto;
+        }
+        .imgg2{
+            height: auto;
+        }
+        .formulario{
+            margin: 0%;
+            padding: 0%;
+        }
+    }
+
