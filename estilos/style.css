@@ -71,6 +71,7 @@ footer{
 #mensajefooter{
     grid-area: mensajefooter;
     padding-top: 25px;
+    margin-right: 1cm;
 }
 h2{
     padding: 10px;}
@@ -229,6 +230,8 @@ div p {
 }
 
 .imgg2:hover{
+    border-radius: 2cm;
+    background-color: rgb(229, 108, 108);
     transform: scale(1.1);
     transition-duration: 5s;
 }
@@ -278,4 +281,30 @@ div p {
 .jg{
  margin-left: 1cm;
  margin-left: 1cm;
+}
+li{
+    padding-left: 1cm;
+    padding-right: 1cm;
+    font-family: Arial, Helvetica, sans-serif;} 
+    li:hover{
+        background-color: red;
+        transition-duration: 2s;
+        padding-left: 1.5cm;
+        padding-right: 1.5cm;
+    }
+.redessociales{
+    margin-top: 10%;
+    padding-left: 2.5cm;
+}
+.a9{
+    padding: 5px;
+}
+.a9:hover{
+    transform: scale(2);
+    transition-duration: 5s;
+}
+.accordion-item{
+    margin: 1cm;
+    margin-left:1cm ;
+    margin-right: 1cm;
 }
