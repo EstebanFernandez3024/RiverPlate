@@ -47,7 +47,7 @@ height: 100%;
     padding: 0;
     padding-bottom: 0%;
     margin-bottom: 0;
-    background-color: black;
+    background-color: #191919;
     color: white;
     font-size: 20px;
 }
@@ -63,6 +63,7 @@ footer{
     }
     #info{
         grid-area: info;
+        margin-top: 1cm;
     }
     #logofooter{
         margin-top: 10%;
@@ -80,7 +81,17 @@ h2{
         text-align: center;
         color: rgb(230, 18, 18);
     }
+footer{
+    color: #646464;
+}
+h2:hover{
+    color: white;
+    text-decoration: underline rgb(255, 255, 255);
+}
 
+#info:hover{
+color: white;
+}
 
 /*historia*/
 .videohistoria{
@@ -161,6 +172,7 @@ div p {
         color: black;
         font-size: 50px;
         padding: 10px;
+        border-bottom: 2px solid rgb(0, 0, 0);
 
     }
     #contenido2{
@@ -172,6 +184,7 @@ div p {
         color: black;
         font-size: 50px;
         padding: 10px;
+        border-bottom: 2px solid rgb(0, 0, 0);
 
     }
     #contenido3{
@@ -282,13 +295,16 @@ div p {
         #mensajefooter{
             display: none;
         }
-        
+        .carrusel{
+            padding-bottom: 3%;
+        }
     }
 
 .carrusel{
     margin-top: 5cm;
     margin-left: 1cm;
     margin-right: 1cm;
+    border-bottom: 2px solid rgb(107, 107, 107);
 }
 
 .jg{
@@ -325,4 +341,12 @@ li{
     margin-left: 15%;
     margin-top: 10%;
     margin-bottom: 2%;
+}
+.tituside{
+    border-bottom: 2px solid rgb(107, 107, 107);
+}
+
+.infoside{
+    border-bottom: 1px solid rgb(107, 107, 107);
+    margin-bottom: 1cm;
 }
