@@ -231,9 +231,12 @@ div p {
 
 .imgg2:hover{
     border-radius: 2cm;
-    background-color: rgb(229, 108, 108);
+    background-image: url(../img/jugadores/adsda.gif);
+    background-repeat: no-repeat;
+    background-position: center;
     transform: scale(1.1);
     transition-duration: 5s;
+ 
 }
 
 @media (max-width: 1400px) {
@@ -271,11 +274,15 @@ div p {
             height: auto;
         }
         #sidebar{ 
-display: none;
+            display: none;
         }
         #sidebar2{
             display: none;
         }
+        #mensajefooter{
+            display: none;
+        }
+        
     }
 
 .carrusel{
@@ -306,11 +313,16 @@ li{
     padding: 5px;
 }
 .a9:hover{
-    transform: scale(2);
+    transform: scale(1.5);
     transition-duration: 5s;
 }
 .accordion-item{
     margin: 1cm;
     margin-left:1cm ;
     margin-right: 1cm;
+}
+.redessociales1{
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 2%;
 }
