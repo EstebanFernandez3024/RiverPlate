@@ -32,7 +32,23 @@ h1:hover{
     color: red;
     transition-duration: 2s;
 } 
+.a9{
+    padding: 5px;
+}
+.a9:hover{
+    transform: scale(1.5);
+    transition-duration: 5s;
+}
+.accordion-item{
+    margin: 1cm;
+    margin-left:1cm ;
+    margin-right: 1cm;
+}
+.redessociales1{
+    margin-left: 15%;
+    margin-top: 10%;
 
+}
 
 
 /*MENU*/
@@ -92,6 +108,17 @@ h2:hover{
 #info:hover{
 color: white;
 }
+.redessociales{
+    margin: 10px;
+    margin-left: -1cm;
+    }
+    .a99{
+        margin-left: 1cm ;
+    }
+    .a99:hover{
+        transform: scale(1.5);
+        transition-duration: 5s;
+    }
 
 /*historia*/
 .videohistoria{
@@ -321,27 +348,9 @@ li{
         padding-left: 1.5cm;
         padding-right: 1.5cm;
     }
-.redessociales{
-    margin-top: 10%;
-    padding-left: 2.5cm;
-}
-.a9{
-    padding: 5px;
-}
-.a9:hover{
-    transform: scale(1.5);
-    transition-duration: 5s;
-}
-.accordion-item{
-    margin: 1cm;
-    margin-left:1cm ;
-    margin-right: 1cm;
-}
-.redessociales1{
-    margin-left: 15%;
-    margin-top: 10%;
-    margin-bottom: 2%;
-}
+
+
+
 .tituside{
     border-bottom: 2px solid rgb(107, 107, 107);
 }
@@ -349,4 +358,44 @@ li{
 .infoside{
     border-bottom: 1px solid rgb(107, 107, 107);
     margin-bottom: 1cm;
+}
+.bodyriver{
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+    background-image: url(../img/bkg_monumental.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    margin-top: 2cm;
+}
+.fran{
+    margin-top: 2cm;
+    margin-bottom: -1cm;
+
+}
+.formulario2{
+    margin-top: 25%;
+    margin-bottom: 10%;
+    background-color: #646464;
+    padding: 2cm;
+    border-radius: 2cm;
+    margin-right: 1cm;
+}
+.footergrids1{
+    margin-top: -1cm;
+}
+@media (max-width: 1500px){
+    .bodyriver{
+        background-image: none;
+        display: block;
+    background-color: #ff0000;
+margin-bottom: 0;}
+    .fran{
+        margin-bottom: 0;
+        margin-left: 5cm;
+    }
+    .formulario2{
+        margin: 5%;
+    }
 }
