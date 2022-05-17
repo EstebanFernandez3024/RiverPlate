@@ -270,6 +270,12 @@ div p {
         .imgg2{
             height: auto;
         }
+        #sidebar{ 
+display: none;
+        }
+        #sidebar2{
+            display: none;
+        }
     }
 
 .carrusel{
