@@ -199,9 +199,10 @@ div p {
         text-align: center;
         margin-bottom: 1cm;
         color: black;
-        font-size: 50px;
-        padding: 10px;
+        font-size: 30px;
+        padding: 15px;
         border-bottom: 2px solid rgb(0, 0, 0);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     }
     #contenido2{
@@ -211,9 +212,10 @@ div p {
         text-align: center;
         margin-bottom: 1cm;
         color: black;
-        font-size: 50px;
+        font-size: 30px;
         padding: 10px;
         border-bottom: 2px solid rgb(0, 0, 0);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     }
     #contenido3{
@@ -289,7 +291,7 @@ div p {
     @media (max-width: 1400px){
         .cabeza{
             display: block;
-            margin-bottom: 1cm;
+     
         }
         .jugadores{
             display: block;
@@ -337,6 +339,9 @@ div p {
         }
         .titulo{
             display: none;
+        }
+        .mininoti{
+         display: block;
         }
     }
 
@@ -394,24 +399,65 @@ li{
     padding: 2cm;
     border-radius: 2cm;
     margin-right: 1cm;
+} 
+.footersocios{
+    margin-top: -37px;
 }
-.footergrids1{
-    margin-top: -1cm;
-}
+
 @media (max-width: 1500px){
     .bodyriver{
         background-image: none;
         display: block;
-    background-color: #ff0000;
+    background-color: #ffffff;
 margin-bottom: 0;}
     .fran{
-        margin-bottom: 0;
-        margin-left: 5cm;
+     display: none;
     }
     .formulario2{
-        margin: 5%;
+        margin-top: 5cm;
+    }
+    .mininoti{
+        display: none !important;
+    }
+    .footersocios{
+        margin: 0;
     }
 }
 .accordion-button{
     font-size: large;
+}
+/*HOME*/
+h3{
+
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+} 
+
+h6{
+    font-size: 97%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 12cm;
+    color: black;
+    margin-bottom: 0;
+    text-align: start;
+    background-color: #646464;    
+    padding: 5px;
+}
+h6:hover{
+    color: aliceblue;
+}
+.mininoti{
+
+    display: flex;
+    margin-bottom: 1cm;
+margin-left: 14%;
+}
+.imgmini{
+    margin-left: 8%;
+    margin-right: -3cm;
+}
+h5{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
