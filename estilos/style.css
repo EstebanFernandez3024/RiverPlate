@@ -128,11 +128,10 @@ color: white;
     margin: 2%;
 }
 .escudos{
-    margin-left: 5cm;
     margin-top: 6cm;
     margin-bottom: 1cm;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -140,11 +139,7 @@ color: white;
 div p {
     text-align: auto;
 }
-.escudos p{
-    font-size: 1cm;
-    padding-left: 1cm;
-    padding-bottom: 1cm;
-}
+
 .historia{ 
     border: 5px solid red ;
     margin: 60px;
@@ -264,23 +259,37 @@ div p {
     font-size: 30px;
     text-align: center;
 }
-
-.jugadores p{
-    border: 1px solid black;
+.jugadores1{
+    border: 10px ridge rgb(107, 107, 107);
+    margin: 1cm;
+    
 }
+.jugadores1:hover{
+    border-radius: 2cm;
+    background-image: url(../img/jugadores/adsda.gif);
+    background-repeat:repeat;
+    background-size: 100% 100%;
+    transform: scale(1.1);
+    transition-duration: 5s;
+
+    
+}
+
+.jg{
+    padding: 0;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    background-color: rgb(107, 107, 107);
+    color: #ffffff;
+   }
 
 .video{
     border-radius: 20px;
 }
 
-.imgg2:hover{
-    border-radius: 2cm;
-    background-image: url(../img/jugadores/adsda.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: scale(1.1);
-    transition-duration: 5s;
- 
+.imgg2{
+    padding-bottom: 1cm;
+    border-bottom: 1px solid rgb(107, 107, 107);
 }
 
 @media (max-width: 1400px) {
@@ -303,9 +312,7 @@ div p {
         .containerhome{
             display: block;
         }
-        .escudos{
-            display: block;
-        }
+  
         .videohistoria{
             display: block;
         }
@@ -343,7 +350,44 @@ div p {
         .mininoti{
          display: block;
         }
+        .formulario{
+            margin: 0;
+            margin-top: 5cm;
+        }
+        .escudos{
+            margin: 0;
+            margin-top: 5cm;
+            margin-left: 4cm;
+            align-items: center;
+        }
+        .escudos{
+            grid-template-columns: 1fr 1fr !important;
+        }
+        .jugadores1{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
     }
+    @media (max-width: 948px){
+        .escudos{
+            display: block;
+            margin: 0;
+            margin-top: 5cm;
+        }
+        
+     }
+    .escudosep{
+        margin: 2cm;
+        border: 10px ridge rgb(107, 107, 107);
+    }
+    p{
+        padding: 1cm;
+    }
+    .imgg{
+        padding: 10%;
+        border-bottom: 1px solid rgb(107, 107, 107);
+    }
+
 
 .carrusel{
     margin-top: 5cm;
@@ -352,10 +396,7 @@ div p {
     border-bottom: 2px solid rgb(107, 107, 107);
 }
 
-.jg{
- margin-left: 1cm;
- margin-left: 1cm;
-}
+
 li{
     padding-left: 1cm;
     padding-right: 1cm;
