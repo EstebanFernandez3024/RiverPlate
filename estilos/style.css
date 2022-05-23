@@ -381,7 +381,7 @@ div p {
         border: 10px ridge rgb(107, 107, 107);
     }
     p{
-        padding: 1cm;
+        padding: 0cm;
     }
     .imgg{
         padding: 10%;
