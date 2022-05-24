@@ -1,0 +1,47 @@
+/*JUGADORES*/
+
+.jugadores{
+    
+    margin-left: 3cm;
+    margin-top: 6cm;
+    margin-right: 1cm;
+    margin-bottom: 1cm;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.jugadores1{
+    border: 10px ridge rgb(107, 107, 107);
+    margin: 1cm;
+    
+}
+.jugadores1:hover{
+    border-radius: 2cm;
+    background-image: url(../img/jugadores/adsda.gif);
+    background-repeat:repeat;
+    background-size: 100% 100%;
+    transform: scale(1.1);
+    transition-duration: 5s;
+
+    
+}
+
+.jg{
+    padding: 0;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    background-color: rgb(107, 107, 107);
+    color: #ffffff;
+   }
+
+.video{
+    border-radius: 20px;
+}
+
+.imgg2{
+    padding-bottom: 1cm;
+    border-bottom: 1px solid rgb(107, 107, 107);
+}

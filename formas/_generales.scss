@@ -1,0 +1,132 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+$coloreyf: #191919;
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*ENCABEZADO*/ 
+#encabezado{
+    display: flex;
+    background-color: $coloreyf;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo{
+    padding: 30px;
+    padding-left: 70px;
+    margin: 0;
+}
+.titulo{
+ 
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+
+font-size: 50px;
+
+}
+h1:hover{
+    color: red;
+    transition-duration: 2s;
+} 
+.a9{
+    padding: 5px;
+}
+.a9:hover{
+    transform: scale(1.5);
+    transition-duration: 5s;
+}
+.accordion-item{
+    margin: 1cm;
+    margin-left:1cm ;
+    margin-right: 1cm;
+}
+.redessociales1{
+    margin-left: 15%;
+    margin-top: 10%;
+
+}
+/*MENU*/
+.navbar{
+    margin: 0cm;
+}
+
+
+/*footer*/
+footer{
+height: 100%;
+    padding: 0;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    background-color: $coloreyf;
+    color: white;
+    font-size: 20px;
+    div p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.footergrids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "info logofooter mensajefooter" ;
+    text-align: center;
+    }
+    #info{
+        grid-area: info;
+        margin-top: 1cm;
+    }
+    #logofooter{
+        margin-top: 10%;
+        grid-area: logofooter;
+    }
+#mensajefooter{
+    grid-area: mensajefooter;
+    padding-top: 25px;
+    margin-right: 1cm;
+}
+h2{
+    padding: 10px;}
+
+.derechos{
+font-size: small;
+font-family: Arial, Helvetica, sans-serif;
+color: #646464;
+margin-bottom: -1cm;
+}
+footer{
+    color: #646464;
+}
+h2:hover{
+    color: white;
+    text-decoration: underline rgb(255, 255, 255);
+}
+
+#info:hover{
+color: white;
+}
+.redessociales{
+    margin: 10px;
+    margin-left: -1cm;
+    }
+    .a99{
+        margin-left: 1cm ;
+    }
+    .a99:hover{
+        transform: scale(1.5);
+        transition-duration: 5s;
+    }
+
+    li{
+        padding-left: 1cm;
+        padding-right: 1cm;
+        font-family: Arial, Helvetica, sans-serif;} 
+        li:hover{
+            background-color: red;
+            transition-duration: 2s;
+            padding-left: 1.5cm;
+            padding-right: 1.5cm;
+        }
