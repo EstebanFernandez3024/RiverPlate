@@ -305,6 +305,13 @@ p {
 }
 
 /*MEDIA*/
+.redesss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+}
+
 .btn--twitter {
   background-color: #55ACEE;
 }
@@ -315,6 +322,12 @@ p {
 
 .btn--instagram {
   background-color: #C25E30;
+}
+
+/*mixin*/
+.mixin {
+  height: 100px;
+  width: 100px;
 }
 
 @media (max-width: 1400px) {
@@ -502,8 +515,8 @@ p {
 }
 
 #sidebar {
-  grid-row: 1;
-  grid-row-start: 3;
+grid-row: 1;
+  -ms-grid-rows: 3;
   grid-column: 1;
   grid-area: sidebar;
   text-align: center;
@@ -514,7 +527,7 @@ p {
 
 #sidebar2 {
   grid-row: 1;
-  grid-row-start: 3;
+  -ms-grid-row-span: 3;
   grid-column: 3;
   grid-area: sidebar2;
   text-align: center;
@@ -921,8 +934,4 @@ h5 {
   height: 100px;
   width: 250px;
 }
-
-
-
-
 /*# sourceMappingURL=style.css.map */

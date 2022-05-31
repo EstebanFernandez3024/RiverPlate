@@ -7,6 +7,10 @@
 
 /*MEDIA*/
 
+.redesss{
+  display: flex;
+  margin-left: 100px;
+}
 $redes:(
     twitter: #55ACEE,
     facebook: #3A5795,
@@ -18,7 +22,16 @@ $redes:(
         background-color: $color;
     }
 };
+/*mixin*/
+@mixin sizes ($width, $height) {
+   
+            height: $height;
+            width: $width;
+}
 
+.mixin{
+  @include sizes(100px, 100px)
+}
 
 @media (max-width: 1400px) {
     header nav ul li{
