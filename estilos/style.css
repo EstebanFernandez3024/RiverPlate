@@ -313,7 +313,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 100px;
+  text-align: end;
+  padding-left: 200px;
 }
 
 .btn--twitter {
@@ -332,6 +333,19 @@ p {
 .mixin {
   height: 50px;
   width: 100px;
+}
+
+.btn--twitter {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.btn--facebook {
+  padding: 10px;
+}
+
+.btn--instagram {
+  padding: 10px;
 }
 
 /*MEDIA*/

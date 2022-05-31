@@ -13,7 +13,8 @@
 
 .redesss{
   display: flex;
-  margin-left: 100px;
+ text-align: end;
+ padding-left: 200px;
 }
 $redes:(
     twitter: #55ACEE,
@@ -36,7 +37,16 @@ $redes:(
 .mixin{
   @include sizes(100px, 50px)
 }
-
+.btn--twitter{
+  padding: 10px;
+  margin-right: 10px;
+}
+.btn--facebook{
+  padding: 10px;
+}
+.btn--instagram{
+  padding: 10px;
+}
 
 /*MEDIA*/
 
