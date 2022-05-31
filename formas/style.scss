@@ -1,5 +1,4 @@
 @import "generales";
-@import "home";
 @import "contacto";
 @import "historia";
 @import "jugadores";
@@ -667,3 +666,15 @@ h5{
   font-size: 38px;
   vertical-align: middle;
 }
+
+$redes:(
+    twitter: #55ACEE,
+    facebook: #3A5795,
+    instagram: #C25E30,
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+};
