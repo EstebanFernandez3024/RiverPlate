@@ -88,22 +88,22 @@ footer div p {
 }
 
 #info {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: info;
   margin-top: 1cm;
 }
 
 #logofooter {
   margin-top: 10%;
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: logofooter;
 }
 
 #mensajefooter {
-  grid-row: 1;
-  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: mensajefooter;
   padding-top: 25px;
   margin-right: 1cm;
@@ -304,7 +304,11 @@ p {
   margin-top: -37px;
 }
 
-/*MEDIA*/
+/*extend*/
+.river, .boca {
+  border: 10px solid black;
+}
+
 .redesss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,10 +330,11 @@ p {
 
 /*mixin*/
 .mixin {
-  height: 100px;
+  height: 50px;
   width: 100px;
 }
 
+/*MEDIA*/
 @media (max-width: 1400px) {
   header nav ul li {
     display: block;
@@ -502,9 +507,7 @@ p {
       grid-template-columns: 20% 60% 20%;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "sidebar contenido1 sidebar2 "
- "sidebar contenido2 sidebar2"
- "sidebar contenido3 sidebar2";
+      grid-template-areas: "sidebar contenido1 sidebar2 " "sidebar contenido2 sidebar2" "sidebar contenido3 sidebar2";
   grid-gap: 1px;
   font-weight: 800;
   font-size: 15px;
@@ -515,9 +518,9 @@ p {
 }
 
 #sidebar {
-grid-row: 1;
-  -ms-grid-rows: 3;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   grid-area: sidebar;
   text-align: center;
   color: black;
@@ -526,9 +529,9 @@ grid-row: 1;
 }
 
 #sidebar2 {
-  grid-row: 1;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 3;
-  grid-column: 3;
+  -ms-grid-column: 3;
   grid-area: sidebar2;
   text-align: center;
   color: black;
@@ -537,8 +540,8 @@ grid-row: 1;
 }
 
 #contenido1 {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: contenido1;
   margin-top: 1cm;
   text-align: center;
@@ -551,8 +554,8 @@ grid-row: 1;
 }
 
 #contenido2 {
-  grid-row: 2;
-  grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: contenido2;
   margin-top: 1cm;
   text-align: center;
@@ -565,8 +568,8 @@ grid-row: 1;
 }
 
 #contenido3 {
-  grid-row: 3;
-  grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: contenido3;
   margin-top: 1cm;
   text-align: center;

@@ -3,9 +3,13 @@
 @import "historia";
 @import "jugadores";
 @import "socios";
-
-
-/*MEDIA*/
+ /*extend*/
+.river{
+  border: 10px solid black;
+}
+.boca{
+  @extend.river;
+}
 
 .redesss{
   display: flex;
@@ -30,8 +34,14 @@ $redes:(
 }
 
 .mixin{
-  @include sizes(100px, 100px)
+  @include sizes(100px, 50px)
 }
+
+
+/*MEDIA*/
+
+
+
 
 @media (max-width: 1400px) {
     header nav ul li{
