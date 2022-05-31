@@ -164,6 +164,311 @@ li:hover {
   padding-right: 1.5cm;
 }
 
+/*contactanos*/
+.formulario {
+  margin: 5cm;
+  background-color: #4c5053;
+  color: white;
+  padding: 1cm;
+  border-radius: 3cm;
+}
+
+.h1contacto {
+  background-color: red;
+  border-radius: 3cm;
+}
+
+/*historia*/
+.videohistoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2%;
+}
+
+.escudos {
+  margin-top: 6cm;
+  margin-bottom: 1cm;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+div p {
+  text-align: auto;
+}
+
+.historia {
+  border: 5px solid red;
+  margin: 60px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.escudosep {
+  margin: 2cm;
+  border: 10px ridge #6b6b6b;
+}
+
+p {
+  padding: 0cm;
+}
+
+.imgg {
+  padding: 10%;
+  border-bottom: 1px solid #6b6b6b;
+}
+
+/*JUGADORES*/
+.jugadores {
+  margin-left: 3cm;
+  margin-top: 6cm;
+  margin-right: 1cm;
+  margin-bottom: 1cm;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.jugadores1 {
+  border: 10px ridge #6b6b6b;
+  margin: 1cm;
+}
+
+.jugadores1:hover {
+  border-radius: 2cm;
+  background-image: url(../img/jugadores/adsda.gif);
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+}
+
+.jg {
+  padding: 0;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  background-color: #6b6b6b;
+  color: #ffffff;
+}
+
+.video {
+  border-radius: 20px;
+}
+
+.imgg2 {
+  padding-bottom: 1cm;
+  border-bottom: 1px solid #6b6b6b;
+}
+
+.bodyriver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url(../img/bkg_monumental.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  margin-top: 2cm;
+}
+
+.fran {
+  margin-top: 2cm;
+  margin-bottom: -1cm;
+}
+
+.formulario2 {
+  margin-top: 25%;
+  margin-bottom: 10%;
+  background-color: #646464;
+  padding: 2cm;
+  border-radius: 2cm;
+  margin-right: 1cm;
+}
+
+.footersocios {
+  margin-top: -37px;
+}
+
+/*MEDIA*/
+.btn--twitter {
+  background-color: #55ACEE;
+}
+
+.btn--facebook {
+  background-color: #3A5795;
+}
+
+.btn--instagram {
+  background-color: #C25E30;
+}
+
+@media (max-width: 1400px) {
+  header nav ul li {
+    display: block;
+  }
+}
+
+@media (max-width: 1400px) {
+  .cabeza {
+    display: block;
+  }
+  .jugadores {
+    display: block;
+  }
+  .footergrids {
+    display: block;
+  }
+  .containerhome {
+    display: block;
+  }
+  .videohistoria {
+    display: block;
+  }
+  #encabezado {
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+  .imgg2 {
+    height: auto;
+  }
+  #sidebar {
+    display: none;
+  }
+  #sidebar2 {
+    display: none;
+  }
+  #mensajefooter {
+    display: none;
+  }
+  .carrusel {
+    padding-bottom: 0%;
+    margin-top: -2cms;
+  }
+  .derechos {
+    margin-top: 5%;
+    font-size: 10px;
+  }
+  .redessociales1 {
+    display: none;
+  }
+  .titulo {
+    display: none;
+  }
+  .mininoti {
+    display: block;
+  }
+  .formulario {
+    margin: 0;
+    margin-top: 5cm;
+  }
+  .escudos {
+    margin: 0;
+    margin-top: 5cm;
+    margin-left: 4cm;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .escudos {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  .jugadores1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 948px) {
+  .escudos {
+    display: block;
+    margin: 0;
+    margin-top: 5cm;
+  }
+}
+
+@media (max-width: 1500px) {
+  .bodyriver {
+    background-image: none;
+    display: block;
+    background-color: #ffffff;
+    margin-bottom: 0;
+  }
+  .fran {
+    display: none;
+  }
+  .formulario2 {
+    margin-top: 5cm;
+  }
+  .mininoti {
+    display: none !important;
+  }
+  .footersocios {
+    margin: 0;
+  }
+  .accordion-button {
+    font-size: large;
+  }
+}
+
+@media (max-width: 1400px) {
+  .productos {
+    text-align: center;
+    margin: 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .tituproductos {
+    margin: 0 !important;
+    padding: 0% !important;
+  }
+  .venta {
+    padding: 0;
+  }
+  .container {
+    padding-left: 25%;
+  }
+}
+
+@media (max-width: 814px) {
+  .productos {
+    text-align: end;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container {
+    padding: auto;
+  }
+}
+
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #c25e30;
+}
+
 /*home*/
 .carrusel {
   margin-top: 5cm;
@@ -198,7 +503,7 @@ li:hover {
 
 #sidebar {
   grid-row: 1;
-  -ms-grid-row-span: 3;
+  grid-row-start: 3;
   grid-column: 1;
   grid-area: sidebar;
   text-align: center;
@@ -209,7 +514,7 @@ li:hover {
 
 #sidebar2 {
   grid-row: 1;
-  -ms-grid-row-span: 3;
+  grid-row-start: 3;
   grid-column: 3;
   grid-area: sidebar2;
   text-align: center;
@@ -617,370 +922,7 @@ h5 {
   width: 250px;
 }
 
-/*REDES*/
-/*contactanos*/
-.formulario {
-  margin: 5cm;
-  background-color: #4c5053;
-  color: white;
-  padding: 1cm;
-  border-radius: 3cm;
-}
-
-.h1contacto {
-  background-color: red;
-  border-radius: 3cm;
-}
-
-/*historia*/
-.videohistoria {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 2%;
-}
-
-.escudos {
-  margin-top: 6cm;
-  margin-bottom: 1cm;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-}
-
-div p {
-  text-align: auto;
-}
-
-.historia {
-  border: 5px solid red;
-  margin: 60px;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-}
-
-.escudosep {
-  margin: 2cm;
-  border: 10px ridge #6b6b6b;
-}
-
-p {
-  padding: 0cm;
-}
-
-.imgg {
-  padding: 10%;
-  border-bottom: 1px solid #6b6b6b;
-}
-
-/*JUGADORES*/
-.jugadores {
-  margin-left: 3cm;
-  margin-top: 6cm;
-  margin-right: 1cm;
-  margin-bottom: 1cm;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  text-align: center;
-}
-
-.jugadores1 {
-  border: 10px ridge #6b6b6b;
-  margin: 1cm;
-}
-
-.jugadores1:hover {
-  border-radius: 2cm;
-  background-image: url(../img/jugadores/adsda.gif);
-  background-repeat: repeat;
-  background-size: 100% 100%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 5s;
-          transition-duration: 5s;
-}
-
-.jg {
-  padding: 0;
-  margin-left: 1cm;
-  margin-right: 1cm;
-  background-color: #6b6b6b;
-  color: #ffffff;
-}
-
-.video {
-  border-radius: 20px;
-}
-
-.imgg2 {
-  padding-bottom: 1cm;
-  border-bottom: 1px solid #6b6b6b;
-}
-
-.bodyriver {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
-  min-width: 100%;
-  background-image: url(../img/bkg_monumental.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 0;
-  margin-top: 2cm;
-}
-
-.fran {
-  margin-top: 2cm;
-  margin-bottom: -1cm;
-}
-
-.formulario2 {
-  margin-top: 25%;
-  margin-bottom: 10%;
-  background-color: #646464;
-  padding: 2cm;
-  border-radius: 2cm;
-  margin-right: 1cm;
-}
-
-.footersocios {
-  margin-top: -37px;
-}
-
-/*MEDIA*/
-@media (max-width: 1400px) {
-  header nav ul li {
-    display: block;
-  }
-}
-
-@media (max-width: 1400px) {
-  .cabeza {
-    display: block;
-  }
-  .jugadores {
-    display: block;
-  }
-  .footergrids {
-    display: block;
-  }
-  .containerhome {
-    display: block;
-  }
-  .videohistoria {
-    display: block;
-  }
-  #encabezado {
-    display: block;
-    text-align: center;
-    height: auto;
-  }
-  .imgg2 {
-    height: auto;
-  }
-  #sidebar {
-    display: none;
-  }
-  #sidebar2 {
-    display: none;
-  }
-  #mensajefooter {
-    display: none;
-  }
-  .carrusel {
-    padding-bottom: 0%;
-    margin-top: -2cms;
-  }
-  .derechos {
-    margin-top: 5%;
-    font-size: 10px;
-  }
-  .redessociales1 {
-    display: none;
-  }
-  .titulo {
-    display: none;
-  }
-  .mininoti {
-    display: block;
-  }
-  .formulario {
-    margin: 0;
-    margin-top: 5cm;
-  }
-  .escudos {
-    margin: 0;
-    margin-top: 5cm;
-    margin-left: 4cm;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .escudos {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
-  }
-  .jugadores1 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
-
-@media (max-width: 948px) {
-  .escudos {
-    display: block;
-    margin: 0;
-    margin-top: 5cm;
-  }
-}
-
-@media (max-width: 1500px) {
-  .bodyriver {
-    background-image: none;
-    display: block;
-    background-color: #ffffff;
-    margin-bottom: 0;
-  }
-  .fran {
-    display: none;
-  }
-  .formulario2 {
-    margin-top: 5cm;
-  }
-  .mininoti {
-    display: none !important;
-  }
-  .footersocios {
-    margin: 0;
-  }
-  .accordion-button {
-    font-size: large;
-  }
-}
-
-@media (max-width: 1400px) {
-  .productos {
-    text-align: center;
-    margin: 0;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .tituproductos {
-    margin: 0 !important;
-    padding: 0% !important;
-  }
-  .venta {
-    padding: 0;
-  }
-  .container {
-    padding-left: 25%;
-  }
-}
-
-@media (max-width: 814px) {
-  .productos {
-    text-align: end;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .container {
-    padding: auto;
-  }
-}
-
-@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
-.social-btns .btn,
-.social-btns .btn:before,
-.social-btns .btn .fa {
-  transition: all 0.35s;
-  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-}
-.social-btns .btn:before {
-  top: 90%;
-  left: -110%;
-}
-.social-btns .btn .fa {
-  transform: scale(0.8);
-}
-.social-btns .btn.facebook:before {
-  background-color: #3b5998;
-}
-.social-btns .btn.facebook .fa {
-  color: #3b5998;
-}
-.social-btns .btn.twitter:before {
-  background-color: #3cf;
-}
-.social-btns .btn.twitter .fa {
-  color: #3cf;
-}
-.social-btns .btn.google:before {
-  background-color: #dc4a38;
-}
-.social-btns .btn.google .fa {
-  color: #dc4a38;
-}
-.social-btns .btn.dribbble:before {
-  background-color: #f26798;
-}
-.social-btns .btn.dribbble .fa {
-  color: #f26798;
-}
-.social-btns .btn.skype:before {
-  background-color: #00aff0;
-}
-.social-btns .btn.skype .fa {
-  color: #00aff0;
-}
-.social-btns .btn:focus:before,
-.social-btns .btn:hover:before {
-  top: -10%;
-  left: -10%;
-}
-.social-btns .btn:focus .fa,
-.social-btns .btn:hover .fa {
-  color: #fff;
-  transform: scale(1);
-}
-.social-btns .btn {
-  display: inline-block;
-  background-color: #fff;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  margin: 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 28%;
-  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
-  opacity: 0.99;
-}
-.social-btns .btn:before {
-  content: '';
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  transform: rotate(45deg);
-}
-.social-btns .btn .fa {
-  font-size: 20px;
-
-}
 
 
 
 /*# sourceMappingURL=style.css.map */
-
-
