@@ -159,3 +159,14 @@ padding-left: 25%;
         padding: auto;
         }
 }
+$redes:(
+  twitter: #55acee,
+  facebook: #3a5795,
+  instagram: #c25e30,
+);
+
+@each $red, $color in $redes {
+  .btn--#{$red}{
+      background-color: $color;
+  }
+}
