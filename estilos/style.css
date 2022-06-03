@@ -348,160 +348,6 @@ p {
   padding: 10px;
 }
 
-/*MEDIA*/
-@media (max-width: 1400px) {
-  header nav ul li {
-    display: block;
-  }
-}
-
-@media (max-width: 1400px) {
-  .cabeza {
-    display: block;
-  }
-  .jugadores {
-    display: block;
-  }
-  .footergrids {
-    display: block;
-  }
-  .containerhome {
-    display: block;
-  }
-  .videohistoria {
-    display: block;
-  }
-  #encabezado {
-    display: block;
-    text-align: center;
-    height: auto;
-  }
-  .imgg2 {
-    height: auto;
-  }
-  #sidebar {
-    display: none;
-  }
-  #sidebar2 {
-    display: none;
-  }
-  #mensajefooter {
-    display: none;
-  }
-  .carrusel {
-    padding-bottom: 0%;
-    margin-top: -2cms;
-  }
-  .derechos {
-    margin-top: 5%;
-    font-size: 10px;
-  }
-  .redessociales1 {
-    display: none;
-  }
-  .titulo {
-    display: none;
-  }
-  .mininoti {
-    display: block;
-  }
-  .formulario {
-    margin: 0;
-    margin-top: 5cm;
-  }
-  .escudos {
-    margin: 0;
-    margin-top: 5cm;
-    margin-left: 4cm;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .escudos {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
-  }
-  .jugadores1 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
-
-@media (max-width: 948px) {
-  .escudos {
-    display: block;
-    margin: 0;
-    margin-top: 5cm;
-  }
-}
-
-@media (max-width: 1500px) {
-  .bodyriver {
-    background-image: none;
-    display: block;
-    background-color: #ffffff;
-    margin-bottom: 0;
-  }
-  .fran {
-    display: none;
-  }
-  .formulario2 {
-    margin-top: 5cm;
-  }
-  .mininoti {
-    display: none !important;
-  }
-  .footersocios {
-    margin: 0;
-  }
-  .accordion-button {
-    font-size: large;
-  }
-}
-
-@media (max-width: 1400px) {
-  .productos {
-    text-align: center !important;
-    margin: 0 !important;
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
-  }
-  .tituproductos {
-    margin: 0 !important;
-    padding: 0% !important;
-  }
-  .venta {
-    padding: 0;
-  }
-  .container {
-    padding-left: 25%;
-  }
-}
-
-@media (max-width: 814px) {
-  .productos {
-    text-align: end !important;
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
-  }
-  .container {
-    padding: auto !important;
-  }
-}
-
-.btn--twitter {
-  background-color: #55acee;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: #c25e30;
-}
-
-/*home*/
 .carrusel {
   margin-top: 5cm;
   margin-left: 1cm;
@@ -951,4 +797,159 @@ h5 {
   height: 100px;
   width: 250px;
 }
+
+/*MEDIA*/
+@media (max-width: 1400px) {
+  header nav ul li {
+    display: block;
+  }
+}
+
+@media (max-width: 1400px) {
+  .cabeza {
+    display: block;
+  }
+  .jugadores {
+    display: block;
+  }
+  .footergrids {
+    display: block;
+  }
+  .containerhome {
+    display: block;
+  }
+  .videohistoria {
+    display: block;
+  }
+  #encabezado {
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+  .imgg2 {
+    height: auto;
+  }
+  #sidebar {
+    display: none;
+  }
+  #sidebar2 {
+    display: none;
+  }
+  #mensajefooter {
+    display: none;
+  }
+  .carrusel {
+    padding-bottom: 0%;
+    margin-top: -2cms;
+  }
+  .derechos {
+    margin-top: 5%;
+    font-size: 10px;
+  }
+  .redessociales1 {
+    display: none;
+  }
+  .titulo {
+    display: none;
+  }
+  .mininoti {
+    display: block;
+  }
+  .formulario {
+    margin: 0;
+    margin-top: 5cm;
+  }
+  .escudos {
+    margin: 0;
+    margin-top: 5cm;
+    margin-left: 4cm;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .escudos {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  .jugadores1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 948px) {
+  .escudos {
+    display: block;
+    margin: 0;
+    margin-top: 5cm;
+  }
+}
+
+@media (max-width: 1500px) {
+  .bodyriver {
+    background-image: none;
+    display: block;
+    background-color: #ffffff;
+    margin-bottom: 0;
+  }
+  .fran {
+    display: none;
+  }
+  .formulario2 {
+    margin-top: 5cm;
+  }
+  .mininoti {
+    display: none !important;
+  }
+  .footersocios {
+    margin: 0;
+  }
+  .accordion-button {
+    font-size: large;
+  }
+}
+
+@media (max-width: 1400px) {
+  .productos {
+    text-align: center !important;
+    margin: 0 !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  .tituproductos {
+    margin: 0 !important;
+    padding: 0% !important;
+  }
+  .venta {
+    padding: 0;
+  }
+  .container {
+    padding-left: 25%;
+  }
+}
+
+@media (max-width: 814px) {
+  .productos {
+    text-align: end !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .container {
+    padding: auto !important;
+  }
+}
+
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #c25e30;
+}
+
+/*home*/
 /*# sourceMappingURL=style.css.map */
