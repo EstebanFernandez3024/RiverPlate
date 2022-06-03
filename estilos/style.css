@@ -461,10 +461,10 @@ p {
 
 @media (max-width: 1400px) {
   .productos {
-    text-align: center;
-    margin: 0;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    text-align: center !important;
+    margin: 0 !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
   }
   .tituproductos {
     margin: 0 !important;
@@ -480,12 +480,12 @@ p {
 
 @media (max-width: 814px) {
   .productos {
-    text-align: end;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    text-align: end !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
   }
   .container {
-    padding: auto;
+    padding: auto !important;
   }
 }
 
