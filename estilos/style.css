@@ -828,6 +828,7 @@ h5 {
   }
   .videohistoria {
     display: block;
+    text-align: center;
   }
   #encabezado {
     display: block;
