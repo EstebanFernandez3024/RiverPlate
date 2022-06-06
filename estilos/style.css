@@ -707,6 +707,7 @@ h5 {
 
 .venta {
   padding: 10px;
+  border: 1px solid black;
 }
 
 .container {
@@ -802,6 +803,14 @@ h5 {
 @media (max-width: 1400px) {
   header nav ul li {
     display: block;
+  }
+  .container {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .venta {
+    margin: 0;
+    padding: 0;
   }
 }
 
