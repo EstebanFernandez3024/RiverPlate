@@ -926,6 +926,10 @@ h5 {
         grid-template-columns: 1fr 1fr !important;
     margin: 0;
   }
+  .video {
+    width: 90%;
+    height: 20cm;
+  }
   .tituproductos {
     margin: 0 !important;
     padding: 0% !important;
