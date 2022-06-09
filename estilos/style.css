@@ -59,9 +59,6 @@ h1:hover {
 }
 
 /*MENU*/
-.navbar {
-  margin: 0cm;
-}
 
 /*footer*/
 footer {
@@ -203,11 +200,12 @@ div p {
 }
 
 .historia {
-  border: 5px solid red;
-  margin: 60px;
+  border: 2px solid rgb(170, 91, 91);
+  margin-left: 10px;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
+  border-radius: 10px;
 }
 
 .escudosep {
@@ -367,7 +365,9 @@ p {
       grid-template-columns: 20% 60% 20%;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "sidebar contenido1 sidebar2 " "sidebar contenido2 sidebar2" "sidebar contenido3 sidebar2";
+      grid-template-areas: "sidebar contenido1 sidebar2 "
+ "sidebar contenido2 sidebar2"
+ "sidebar contenido3 sidebar2";
   grid-gap: 1px;
   font-weight: 800;
   font-size: 15px;
@@ -800,9 +800,7 @@ h5 {
 
 /*MEDIA*/
 @media (max-width: 1400px) {
-  header nav ul li {
-    display: block;
-  }
+
   .container {
     margin-left: 25%;
     margin-right: 25%;
