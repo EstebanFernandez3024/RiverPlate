@@ -38,3 +38,11 @@ class Formulario{
 
 const formularios = new Formulario("Esteban", "Fernandez", 33, "Rivadavia 3024", 1824, "Buenos Aires","Argentina","solero")
  console.log(formularios);
+
+
+
+ 
+ const productosOficiales = [ "Camisetas", "Camperas", "Pantaloes", "Shorts" ]
+ console.log(productosOficiales)
+
+ console.log(productosOficiales.push("Botines", "Remeras", "pelotas", "Zapatillas")) 
