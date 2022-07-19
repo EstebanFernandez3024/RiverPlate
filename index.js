@@ -47,3 +47,21 @@ const formularios = new Formulario("Esteban", "Fernandez", 33, "Rivadavia 3024",
 
  console.log(productosOficiales.push("Botines", "Remeras", "pelotas", "Zapatillas")) 
 
+ let productos = [
+    {
+        nombre: "botines",
+        precio: 18999,
+    },
+    {
+        nombre: "camiseta",
+        precio: 11999,
+    },
+    {
+        nombre: "pelota",
+        precio: 5000,
+    },
+    {
+        nombre: "pantalos=n",
+        precio: 9880,
+    },
+]
