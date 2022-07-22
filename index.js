@@ -90,12 +90,6 @@ const tarjetasHtml = POKEMON.pokemon.reduce((acc, elemento, i) => {
                 <p>
                     ${elemento.name}
                 </p> 
-                <div>
-                    <p>
-                        Debilidades:
-                    </p>
-                    ${debilidadesPokemon(POKEMON.pokemon, i)}     
-                </div>   
             </div>
         `       
 },"")
