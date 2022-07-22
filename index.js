@@ -65,3 +65,45 @@ const formularios = new Formulario("Esteban", "Fernandez", 33, "Rivadavia 3024",
         precio: 9880,
     },
 ]
+console.log(POKEMON)
+console.log(POKEMON.pokemon)
+
+const debilidadesPokemon = (array, i) => {    
+
+    const debilidadesArray = array[i].weaknesses.reduce((acc, curr) => {
+        return acc + `
+            <p>${curr}</p>
+        `      
+    },"")
+
+    return debilidadesArray
+}
+
+
+const tarjetasHtml = POKEMON.pokemon.reduce((acc, elemento, i) => {   
+
+        return acc = acc + `    
+            <div class="tarjeta">
+                <div class="img-container">
+                    <img src=${elemento.img} alt=${elemento.name}>
+                </div>   
+                <p>
+                    ${elemento.name}
+                </p> 
+                <div>
+                    <p>
+                        Debilidades:
+                    </p>
+                    ${debilidadesPokemon(POKEMON.pokemon, i)}     
+                </div>   
+            </div>
+        `       
+},"")
+
+console.log(tarjetasHtml)
+
+const contenedorTarjetas = document.querySelector(".contenedor-tarjetas")
+
+console.log(contenedorTarjetas)
+
+contenedorTarjetas.innerHTML = tarjetasHtml
