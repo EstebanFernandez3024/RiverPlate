@@ -148,18 +148,12 @@ h2:hover {
 }
 
 li {
-  padding-left: 1cm;
-  padding-right: 1cm;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-li:hover {
-  background-color: red;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  padding-left: 1.5cm;
-  padding-right: 1.5cm;
-}
+
 
 /*contactanos*/
 .check{
@@ -201,7 +195,7 @@ align-items: center;
 }
 
 .escudos {
-  margin-top: 6cm;
+
   margin-bottom: 1cm;
   display: -ms-grid;
   display: grid;
@@ -242,7 +236,7 @@ p {
 /*JUGADORES*/
 .jugadores {
   margin-left: 3cm;
-  margin-top: 6cm;
+ 
   margin-right: 1cm;
   margin-bottom: 1cm;
   display: -ms-grid;
@@ -298,7 +292,10 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 0;
-  margin-top: 2cm;
+
+}
+.navcontacto{
+  background-color: #55acee;
 }
 
 .fran {
@@ -364,7 +361,7 @@ p {
 }
 
 .carrusel {
-  margin-top: 5cm;
+  margin-top: 1cm;
   margin-left: 1cm;
   margin-right: 1cm;
   border-bottom: 2px solid #6b6b6b;
@@ -390,8 +387,8 @@ p {
   font-size: 15px;
   color: red;
   text-align: center;
-  margin: 20px;
-  margin-top: 0cm;
+  
+
 }
 
 #sidebar {
