@@ -162,6 +162,9 @@ li:hover {
 }
 
 /*contactanos*/
+.check{
+  display: none;
+}
 #contacto{
   justify-content: center;
   display: flex;
@@ -1003,6 +1006,7 @@ h5 {
   width: 100%;
   height: 100%;
 }
+
 
 /*home*/
 /*# sourceMappingURL=style.css.map */
