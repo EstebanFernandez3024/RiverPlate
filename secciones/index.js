@@ -40,7 +40,7 @@ const submit = document.querySelector("#submit")
 const clientes = []
 
 class Cliente {
-    constructor(nombre, apellido, edad, email){
+    constructor(nombre, apellido, edad, email, mensaje){
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
