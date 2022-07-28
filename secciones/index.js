@@ -79,7 +79,7 @@ inputApellido.onchange = () => {
 }
 inputEdad.onchange = () => {  
     console.log(inputEdad.value)
-    if ( parseInt(inputEdad.value)<= 18){
+    if ( parseInt(inputEdad.value)<= 17){
         alert("eres menor de edad, no puedes enviar el mensaje")
         inputEdad.style.border = "2px solid red"
         submit.disabled = true
