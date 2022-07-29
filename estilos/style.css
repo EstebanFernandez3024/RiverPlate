@@ -62,7 +62,7 @@ h1:hover {
 
 /*footer*/
 footer {
-  height: 100%;
+  height: 90%;
   padding: 0;
   padding-bottom: 0%;
   margin-bottom: 0;
@@ -267,38 +267,26 @@ p {
 }
 
 .bodyriver {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
-  min-width: 100%;
+
+display: flex;
+
   background-image: url(../img/bkg_monumental.png);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 0;
+
 
 }
 .navcontacto{
   background-color: #55acee;
 }
 
-.fran {
-  margin-top: 2cm;
-  margin-bottom: -1cm;
-}
+
 
 .formulario2 {
-  margin-top: 25%;
-  margin-bottom: 10%;
-  background-color: #646464;
-  padding: 2cm;
-  border-radius: 2cm;
-  margin-right: 1cm;
+width: 100%;
 }
 
-.footersocios {
-  margin-top: -37px;
-}
+
 
 /*extend*/
 .river, .boca {
@@ -998,6 +986,260 @@ h5 {
   height: 100%;
 }
 
+a:hover {
+  color: #179b77;
+}
 
+.contenedor-formularios {
+  margin: auto;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  background: rgb(23, 22, 22);
+  padding: 40px;
+  max-width: 600px;
+
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.contenedor-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.contenedor-tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contenedor-tabs li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.contenedor-tabs li a:hover {
+  background: #179b77;
+  color: #fff;
+}
+.contenedor-tabs .active a {
+  background: #1ab188;
+  color: #fff;
+}
+
+.contenido-tab > div:last-child {
+  display: none;
+}
+
+.h1clas {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.labelso {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+.labelso .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+.labelso.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+.labelso.active .req {
+  opacity: 0;
+}
+
+.labelso.highlight {
+  color: #fff;
+}
+
+.inputso {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+  border-radius: 0;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+.inputso :focus {
+  outline: none;
+  border-color: #1ab188;
+}
+
+.contenedor- {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.fila-arriba:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.fila-arriba div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.fila-arriba div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 2rem;
+  background: #1ab188;
+  color: #fff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .fila-arriba div {
+    width: 100%;
+  }
+  .fila-arriba div:last-child {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contenedor-tabs li a {
+    width: 100%;
+  }
+}
+
+.formulario {
+
+  width: 50%;
+  margin: auto;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  text-align: center;
+  background: rgb(36, 33, 33);
+  padding-top: 30px;
+  border-radius: 10px;
+}
+
+.formulario .titulo_formulario {
+  color: rgb(255, 255, 255);
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0px 0 30px 0;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.formulario .input_textual {
+  display: block;
+  padding: 15px 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.formulario .input_textual {
+  color: #444;
+  font-size: 1.1em;
+}
+.formulario .input_textual:focus {
+  outline: none;
+  border: none;
+  border-left: 13px solid #ff1500;
+  box-shadow: 1px 5px 10px #CCC;
+}
+.formulario .input_textual:focus {
+  opacity: 1;
+  left: 30px;
+  transition: all 0.25s ease-out;
+}
+
+.formulario a {
+  font-size: 0.9em;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  border-bottom: 1px solid #ff1500;
+  padding-bottom: 5px;
+}
+
+.formulario a:hover {
+  color: #ffffff;
+  border-color: #FFF;
+}
+
+.formulario .input_boton {
+  margin-top: 55px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 0;
+  outline: none;
+  width: 100%;
+  position: relative;
+  background: rgba(255, 21, 0, 0.8);
+  color: #FFF;
+  bottom: -3px;
+  left: 0px;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.formulario .input_boton:hover {
+  background: rgba(219, 68, 55, 1);
+}
+
+.formulario .input_boton .fa {
+  font-size: 1.4em;
+}
 /*home*/
 /*# sourceMappingURL=style.css.map */
