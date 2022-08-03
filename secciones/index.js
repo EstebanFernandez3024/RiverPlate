@@ -36,6 +36,7 @@ const inputEdad = document.querySelector("#campo-edad")
 const inputEmail = document.querySelector("#campo-email")
 const inputMensaje = document.querySelector("#campo-mensaje")
 const submit = document.querySelector("#submit")
+const correcto = document.querySelector("#correcto")
 
 const clientes = []
 
@@ -87,5 +88,10 @@ inputEdad.onchange = () => {
         inputEdad.style.border = "2px solid green"
         submit.disabled = false
     }
+}
+
+submit.onclick = () => {
+   formulario.style.display = "none"
+   correcto.style.display = "flex"
 }
 

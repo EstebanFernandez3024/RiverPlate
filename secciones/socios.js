@@ -3,6 +3,7 @@ const inputContrasenia = document.getElementById("contrasenia")
 const formSesion = document.getElementById("form-sesion")
 const logOut = document.getElementById("log-out")
 const main = document.querySelector("main")
+const haceteSocios = document.querySelector("haceteSocio")
 
 
 const user = {
@@ -22,7 +23,7 @@ formSesion.onsubmit = (e) => {
         localStorage.setItem("user", true)
     } else {
         formSesion.reset()
-        alert("El usuario o contraseña es incorrecto")
+        alert("El usuario o contraseña es incorrecta")
     }
 }
 
@@ -31,6 +32,7 @@ function preferenciaDeUsuario () {
     if ( tokenLS === "true" ) {
         main.style.display = "flex"
         formSesion.style.display = "none"
+     
     } else if ( tokenLS !== "true" ) {
         main.style.display = "none"
         formSesion.style.display = "flex"

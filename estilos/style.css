@@ -1186,7 +1186,7 @@ color: white;
   border-radius: 1cm;
   
 }
-.haceteSocio{
+#haceteSocio{
   display: flex;
   border-radius: 10px;
   background-color: rgb(36, 33, 33);
@@ -1207,6 +1207,20 @@ box-shadow:0 0 40px -10px rgb(255, 255, 255)
   padding: 2cm;
  border-right: 2px solid white;
  
+}
+#correcto{
+  padding: 1cm;
+  display: none;
+  background-color: white;
+  width: 70%;
+  text-align: center;
+  margin-left: 15%;
+  font-size: 30px;
+  border-radius: 20px;
+  margin-bottom: 1cm;
+}
+.correctoo{
+ margin: 1cm; 
 }
 /*home*/
 /*# sourceMappingURL=style.css.map */
