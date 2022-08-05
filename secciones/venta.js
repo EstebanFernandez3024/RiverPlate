@@ -85,7 +85,7 @@ function mostrarCarrito() {
     let total = carrito.reduce((acc, curr) => acc + parseInt(curr.precio), 0)
     let totalCompra = document.createElement("p")
     totalCompra.setAttribute("class", "total")
-    totalCompra.innerText = ("Total: " + total)
+    totalCompra.innerText = ("Total: $" + total)
     divCarrito.append(totalCompra)
 
     let botonBorrar = document.getElementsByClassName("botonBorrar")
