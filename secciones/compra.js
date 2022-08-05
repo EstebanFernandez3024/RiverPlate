@@ -15,7 +15,7 @@ function productosCarrito() {
     })
 }
 
-carrito2.length ? productosCarrito() : (detalle.innerHTML=`<h3>El carrito está vacío <br/> :(</h3>`)
+carrito2.length ? productosCarrito() : (detalle.innerHTML=`<h3>No hay nada en el carrito</h3>`)
 
 
 let nombre = document.querySelector("#nombre")
@@ -30,6 +30,7 @@ formulario.onsubmit = (e) => {
     e.preventDefault()
     terminarCompra()
     formulario.reset()
+   
 }
 
 function terminarCompra() {

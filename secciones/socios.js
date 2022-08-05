@@ -2,7 +2,7 @@ const inputUsuario = document.getElementById("usuario")
 const inputContrasenia = document.getElementById("contrasenia")
 const formSesion = document.getElementById("form-sesion")
 const logOut = document.getElementById("log-out")
-const main = document.querySelector("main")
+const mainvideo = document.getElementById("videonone")
 const haceteSocios = document.getElementById("haceteSocio")
 
 
@@ -19,9 +19,9 @@ const user = {
 formSesion.onsubmit = (e) => {
     e.preventDefault()
     if ( inputUsuario.value === user.usuario && inputContrasenia.value === user.contrasenia ) {
-        main.style.display = "flex"
+        mainvideo.style.display = "flex"
         formSesion.style.display = "none"
-        haceteSocios.style.display = "none"
+     
         localStorage.setItem("user", true)
     } else {
         formSesion.reset()
@@ -32,7 +32,8 @@ formSesion.onsubmit = (e) => {
 function preferenciaDeUsuario () {
     const tokenLS = localStorage.getItem("user")
     if ( tokenLS === "true" ) {
-        main.style.display = "flex"
+        mainvideo.style.display = "flex"
+
         formSesion.style.display = "none"
      
     } else if ( tokenLS !== "true" ) {
@@ -40,3 +41,7 @@ function preferenciaDeUsuario () {
         formSesion.style.display = "flex"
     }
 }
+
+logOut.onclick = () => {
+    localStorage.removeItem("user")
+    location.reload()}
