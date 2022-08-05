@@ -121,11 +121,7 @@ footer {
   color: #646464;
 }
 
-h2:hover {
-  color: white;
-  -webkit-text-decoration: underline white;
-          text-decoration: underline white;
-}
+
 
 #info:hover {
   color: white;
@@ -1222,5 +1218,10 @@ box-shadow:0 0 40px -10px rgb(255, 255, 255)
 .correctoo{
  margin: 1cm; 
 }
+
+
+
+
+
 /*home*/
 /*# sourceMappingURL=style.css.map */
