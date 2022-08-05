@@ -15,9 +15,9 @@ function mostrarProductos(productos) {
     productos.forEach(producto => {
         productosDiv.innerHTML += `
         <div class="producto">
-        <img src=${producto.img}>
+        <img class="foto" src=${producto.img}>
         <p>${producto.nombre} </p> 
-        <p>$${producto.precio}</p>
+        <p class="precio">$${producto.precio}</p>
         <button class="agregar" id="${producto.id}">Agregar 🛒</button>
     </div>`
     });

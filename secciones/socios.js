@@ -3,7 +3,8 @@ const inputContrasenia = document.getElementById("contrasenia")
 const formSesion = document.getElementById("form-sesion")
 const logOut = document.getElementById("log-out")
 const main = document.querySelector("main")
-const haceteSocios = document.querySelector("haceteSocio")
+const haceteSocios = document.getElementById("haceteSocio")
+
 
 
 const user = {
@@ -11,7 +12,7 @@ const user = {
     contrasenia: "1234567"
 }
 
-let notas = []
+
 
 
 
@@ -20,6 +21,7 @@ formSesion.onsubmit = (e) => {
     if ( inputUsuario.value === user.usuario && inputContrasenia.value === user.contrasenia ) {
         main.style.display = "flex"
         formSesion.style.display = "none"
+        haceteSocios.style.display = "none"
         localStorage.setItem("user", true)
     } else {
         formSesion.reset()
