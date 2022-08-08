@@ -1,9 +1,4 @@
 
-
-
-
-
- 
  const productosOficiales = [ "Camisetas", "Camperas", "Pantaloes", "Shorts" ]
  console.log(productosOficiales)
 

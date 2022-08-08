@@ -122,7 +122,9 @@ footer {
 }
 
 
-
+#bodyindex{
+  display: none;
+}
 #info:hover {
   color: white;
 }
