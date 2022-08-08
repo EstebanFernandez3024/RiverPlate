@@ -70,10 +70,11 @@ registrarse.onclick = () => {
 formSesion.onsubmit = (e) => {
     e.preventDefault()
  
-    if (Number(inputContrasenia.value) === Number(contraseniaLS)){
+    if (Number(inputContrasenia.value) === Number(contraseniaLS) && Number(inputUsuario.value) === Number(usuarioLS) ){
         mainsocios.style.display = "flex"
         formSesion.style.display = "none"
         beneficios.style.display = "none"
+        logOut.style.display = "flex"
         localStorage.setItem("user", true)
     } else {
         formSesion.reset()
