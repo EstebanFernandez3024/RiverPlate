@@ -9,7 +9,30 @@
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#registrarse{
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  background-color: rgb(3, 237, 11);
+  padding: 10px;
+}
 
+#registro{
+  margin: 1cm;
+  background-color: wheat;
+  padding: 1cm;
+  text-align: center;
+margin: auto;
+margin-left: 1cm;
+margin-right: 1cm;
+}
+#botonR{
+  
+  padding: 1cm;
+  border: none;
+  background-color: greenyellow;
+  margin-top: 2cm;
+
+}
 /*ENCABEZADO*/
 #encabezado {
   display: -webkit-box;
