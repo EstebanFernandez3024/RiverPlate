@@ -181,6 +181,7 @@ li {
  margin: 2cm;
 }
 #log-out{
+  display: none;
   height: 1cm;
   width: 2cm;
  margin-left: 50%;
@@ -1227,7 +1228,17 @@ color: white;
 margin: 2cm;
 box-shadow:0 0 40px -10px rgb(255, 255, 255)
 }
-.beneficios{
+#mainsocios{
+  display: none;
+  background-color: red;
+  color: white;
+  font-size: 3cm;
+  text-align: center;
+  justify-content: center;
+  margin: 3cm;
+
+}
+#beneficios{
   text-align: center;
   margin: auto;
   margin-top: 1cm;
