@@ -38,8 +38,8 @@ function terminarCompra() {
     if (nombre.value !== "" && mail.value !== "" && telefono.value !== "" && direccion.value !== "") {
        
         divConfirmacion.innerHTML = `<div class="conf"><img src="../img/correcto.png" alt="" height="200">
-<h3>felicidades su compra se realizo con exito! <br> Gracias por tu compra ${nombre.value}!</h3>
-<p class="pdeconf" >en breves recibiras un Mail a ${mail.value} con la informacion sobre la fecha y horario de entrega!</p></div>
+<h3>felicidades su compra se realizo con exito! <br> Gracias por tu compra ${nombre.value}!</h3> <br>
+
 `
 
 
