@@ -34,6 +34,7 @@ subirls("usuarios", usuariR)
 subirls("contrasenia", contraR)
 formSesion.style.display = "block"
 formRegistro.style.display = "none"
+swal("felicitaciones!", "ya creaste t cuenta!", "success");
 }
 const traerdels = (clave) => {
     const arraydels = localStorage.getItem(clave)
@@ -78,7 +79,7 @@ formSesion.onsubmit = (e) => {
         localStorage.setItem("user", true)
     } else {
         formSesion.reset()
-        alert("El usuario o contraseña es incorrecta")
+        swal("Error", "contrasenia o usuario incorrecto", "error");
     }
 }
 

@@ -54,7 +54,7 @@ formulario.onsubmit = (event) => {
 inputNombre.onchange = () => {  
     console.log(inputNombre.value)
     if (inputNombre.value.length <= 2){
-        alert("ERROR tu nombre es muy corto")
+      swal("ERROR!", "tu nombre es muy corto!", "error");
         inputNombre.style.border = "2px solid red"
         submit.disabled = true
     } else {
@@ -65,7 +65,7 @@ inputNombre.onchange = () => {
 inputApellido.onchange = () => {  
     console.log(inputApellido.value)
     if (inputApellido.value.length <= 2){
-        alert("ERROR tu Apellido es muy corto")
+        swal("ERROR!", "tu apellido es muy corto!", "error");
         inputApellido.style.border = "2px solid red"
         submit.disabled = true
     } else {
@@ -76,7 +76,7 @@ inputApellido.onchange = () => {
 inputEdad.onchange = () => {  
     console.log(inputEdad.value)
     if ( parseInt(inputEdad.value)<= 17){
-        alert("eres menor de edad, no puedes enviar el mensaje")
+        swal("ERROR!", "Eres menor de edad!", "error");
         inputEdad.style.border = "2px solid red"
         submit.disabled = true
     } else {
@@ -86,7 +86,9 @@ inputEdad.onchange = () => {
 }
 
 submit.onclick = () => {
-   formulario.style.display = "none"
-   correcto.style.display = "flex"
+
+   swal("FELICITACIONES!", "Su mensaje fue enviado!", "success");
+  
+
 }
 

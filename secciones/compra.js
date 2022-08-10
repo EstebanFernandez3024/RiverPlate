@@ -44,6 +44,7 @@ function terminarCompra() {
 
 
 
+
     } else {
         divConfirmacion.innerHTML = `
         <h3>Por favor complete todos los campos</h3>`

@@ -60,8 +60,8 @@ function agregarAlCarrito(e) {
     carrito.push(productoSeleccionado)
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
-
-    alert("Agregaste " + productoSeleccionado.nombre + " al carrito")
+    swal ( " ¡AGREGASTE AL CARRITO! " ,  productoSeleccionado.nombre  , " success " )   ;
+   
 
     mostrarCarrito()
 }
@@ -98,6 +98,7 @@ function mostrarCarrito() {
         carrito = []
         localStorage.clear()
         divCarrito.innerHTML = ""
+        swal ( " Vaciaste el carrito " ,  "0"  , " success " )   ;
     })
 
     let terminarCompra = document.createElement("button")
