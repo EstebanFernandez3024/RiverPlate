@@ -13,6 +13,7 @@ function productosCarrito() {
         <button class="botonBorrar">X</button>
         </li>`
     })
+    
 }
 
 carrito2.length ? productosCarrito() : (detalle.innerHTML=`<h3>No hay nada en el carrito</h3>`)
@@ -41,11 +42,7 @@ function terminarCompra() {
 <h3>felicidades su compra se realizo con exito! <br> Gracias por tu compra ${nombre.value}!</h3> <br>
 
 `
-
-
-
-
-    } else {
+  } else {
         divConfirmacion.innerHTML = `
         <h3>Por favor complete todos los campos</h3>`
     }

@@ -26,6 +26,23 @@ function mostrarProductos(productos) {
 mostrarProductos(products)
 
 
+function agregarAlCarrito(e) {
+    divCarrito.innerHTML = ""
+    const boton = e.target;
+    const idBoton = boton.getAttribute("id");
+    let productoSeleccionado = products.find(producto => producto.id === idBoton)
+    carrito.push(productoSeleccionado)
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    swal ( " ¡AGREGASTE AL CARRITO! " ,  productoSeleccionado.nombre  , " success " )   ;
+   
+
+    mostrarCarrito()
+}
+
+for (boton of botonAgregar) {
+    boton.addEventListener("click", agregarAlCarrito)
+}
 
 for (btn of btnFiltro) {
     btn.addEventListener("click", filtrar)
@@ -38,6 +55,9 @@ function filtrar(e) {
     console.log(productosFiltrados)
     productosDiv.innerHTML = ""
     mostrarProductos(productosFiltrados)
+    for (boton of botonAgregar) {
+        boton.addEventListener("click", agregarAlCarrito)
+    }
 }
 
 
@@ -108,6 +128,9 @@ function mostrarCarrito() {
 
     terminarCompra.addEventListener("click", ()=>{
         window.location.href="vender.html"
+        for (botonX of botonBorrar) {
+            botonX.addEventListener("click", eliminarProducto)
+        }
     })
 }
 
