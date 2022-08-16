@@ -48,7 +48,8 @@ class Cliente {
 formulario.onsubmit = (event) => {
     event.preventDefault()
     console.log(event)
-    clientes.push(new Cliente(inputNombre.value, inputApellido.value, inputEdad.value, inputEmail.value, inputMensaje.value))
+    clientes.push(new Cliente(inputNombre.value, inputApellido.value, 
+        inputEdad.value, inputEmail.value, inputMensaje.value))
     console.log(clientes)
 }
 inputNombre.onchange = () => {  

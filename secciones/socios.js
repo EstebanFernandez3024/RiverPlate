@@ -1,102 +1,135 @@
-const inputUsuario = document.getElementById("usuario")
-const inputContrasenia = document.getElementById("contrasenia")
-const formSesion = document.getElementById("form-sesion")
-const logOut = document.getElementById("log-out")
-const mainsocios = document.getElementById("mainsocios")
-const haceteSocios = document.getElementById("haceteSocio")
-const contraseniaR= document.getElementById("contraseniaR")
-const usuarioR = document.getElementById("usuarioR")
-const formRegistro = document.getElementById("registro")
-const botonR = document.getElementById("botonR")
-const registrarse = document.getElementById("registrarse")
-const beneficioss = document.getElementById("beneficios")
+const user = document.getElementById("user")
+const password = document.getElementById("password")
+const formlogin = document.getElementById("formlogin")
+const login = document.getElementById("login")
 
+const registerUser = document.getElementById("register")
+const recuperarContraseña = document.getElementById("recuperarContraseña")
 
-let  nuevoshinchas = []
-let usuariR = []
-let contraR = []
+let users = JSON.parse(localStorage.getItem("users")) || [{
+    username: "ine22",
+    password: "hola",
+    email: "ine@ine.com"
+}]
 
-const pushearUsuario = (array, valor) => {
-array.push(valor)
-}
-const subirls = (clave, valor) => {
-    const arrayjson = JSON.stringify(valor)
-    localStorage.setItem(clave, arrayjson)
-}
+console.log(users)
 
 
 
-formRegistro.onsubmit = (e) => {
-e.preventDefault()
-pushearUsuario(usuariR, usuarioR.value);
-pushearUsuario(contraR, contraseniaR.value)
-subirls("usuarios", usuariR)
-subirls("contrasenia", contraR)
-formSesion.style.display = "block"
-formRegistro.style.display = "none"
-swal("felicitaciones!", "ya creaste t cuenta!", "success");
-}
-const traerdels = (clave) => {
-    const arraydels = localStorage.getItem(clave)
-    const parseararray = JSON.parse(arraydels)
-    return parseararray
-    
+
+
+// INICIAR SESION
+function logIn() {
+    let usuarioIngresado = users.find(userU => userU.username === user.value)
+
+    if (usuarioIngresado == undefined) {
+        Swal.fire(
+            'Usuario no encontrado',
+            'por favor registrese',
+            'error'
+        )
+    } else if (usuarioIngresado.password !== password.value) {
+        Swal.fire(
+            'Contraseña incorrecta',
+            '',
+            'error'
+        )
+    } else {
+        window.location.href = "test.html"
     }
-    const traerdelss = (clave) => {
-        const arraydelss = localStorage.getItem(clave)
-        const parseararrayy = JSON.parse(arraydelss)
-        return parseararrayy
-        
+}
+
+login.onclick = (e) => {
+    e.preventDefault()
+    logIn()
+}
+
+//REGISTRAR
+class NewUser {
+    constructor(email, username, password) {
+        this.email = email,
+            this.username = username,
+            this.password = password
+    }
+}
+
+
+const divRegister = document.querySelector("#divRegister");
+
+
+function register() {
+    const nuevoUsuario = new NewUser(emailInput.value, inputUser.value, inputPassword.value)
+    users.push(nuevoUsuario)
+    console.log(nuevoUsuario)
+    console.log(users)
+}
+
+registerUser.onclick = (e) => {
+    e.preventDefault()
+    divRegister.style.display = "flex"
+    const formRegister = document.getElementById("formRegister")
+    const emailInput = document.getElementById("inputEmail");
+    const inputUser = document.getElementById("inputUser")
+    const inputPassword = document.getElementById("inputPassword");
+
+    formRegister.onsubmit = (e) => {
+        e.preventDefault()
+        let mailExiste = users.some((userA) => userA.email === emailInput.value)
+    
+        let usernameExiste = users.some((userA) => userA.username === inputUser.value)
+       
+
+        function nuevoUsuario() {
+            const newUser = new NewUser(emailInput.value, inputUser.value, inputPassword.value)
+            users.push(newUser)
+            console.log(users)
+            divRegister.style.display = "none"
+            setStorage()
         }
 
+        (mailExiste || usernameExiste) ? alert("Este usuario ya se encuentra registrado"): nuevoUsuario()
+    }
 
-
-
-
-let usuarioLS = traerdels("usuarios")
-console.log(usuarioLS)
-
-let contraseniaLS = traerdelss("contrasenia")
-console.log(contraseniaLS)
-
-
-
-registrarse.onclick = () => {
-    registro.style.display = "block"
-
-    formSesion.style.display = "none"
 }
 
+//RECUPERAR
+const recuperarContrasenia = document.getElementById("recuperarContrasenia")
+const divNewPass = document.getElementById("newPassw")
+const emailRecuperar = document.getElementById("emailRecuperar")
+const passRecuperar = document.getElementById("passRecuperar")
+const passConfirm = document.getElementById("passConfirm")
+const cambiarPass = document.getElementById("cambiarPass")
 
-formSesion.onsubmit = (e) => {
-    e.preventDefault()
- 
-    if (Number(inputContrasenia.value) === Number(contraseniaLS) && Number(inputUsuario.value) === Number(usuarioLS) ){
-        mainsocios.style.display = "flex"
-        formSesion.style.display = "none"
-        beneficios.style.display = "none"
-        logOut.style.display = "flex"
-        localStorage.setItem("user", true)
+
+function showPassword() {
+    let mailRegistrado = users.find(userF => userF.email === emailRecuperar.value)
+
+    if (mailRegistrado !== undefined) {
+        if (passRecuperar.value === passConfirm.value) {
+            mailRegistrado.password = passRecuperar.value
+            alert("Contraseña cambiada")
+            console.log(mailRegistrado)
+            setStorage()
+        } else {
+            alert("La contraseña no coincide")
+        }
     } else {
-        formSesion.reset()
-        swal("Error", "contrasenia o usuario incorrecto", "error");
+        alert("No se encontro el usuario")
     }
 }
 
-function preferenciaDeUsuario () {
-    const tokenLS = localStorage.getItem("user")
-    if ( tokenLS === "true" ) {
-        mainsocios.style.display = "flex"
-       
-        logOut.style.display = "flex"
-        formSesion.style.display = "none"
-     
-    } else if ( tokenLS !== "true" ) {
-        main.style.display = "none"
-        formSesion.style.display = "flex"
+recuperarContrasenia.onclick = (e) => {
+    e.preventDefault()
+    divNewPass.style.display = "flex"
+    cambiarPass.onclick = (e) => {
+        e.preventDefault()
+        showPassword()
+        divNewPass.style.display = "none"
+
     }
 }
 
-logOut.onclick = () => {
-    localStorage.removeItem("user")
-    location.reload()}
+
+function setStorage(){
+    localStorage.setItem("users", JSON.stringify(users))
+}

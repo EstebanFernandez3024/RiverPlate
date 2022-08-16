@@ -1,0 +1,95 @@
+.sociostilo{
+    display: flex;
+    margin:1cm;
+    
+    background: #000000;
+    padding: 1cm;
+}
+
+.p{
+    color: white;
+
+font-size: 30px;
+}
+section{
+    width: 20cm;
+    
+    margin-left: 5cm;
+    
+}
+
+.login{
+    box-shadow:0 0 40px -10px rgb(255, 255, 255);
+width: 70%;
+height: 1cm;
+margin-left: 3cm;
+padding: 1cm;
+    background-color: rgb(223, 33, 33);
+    border-radius: 15px;
+    height: max-content;
+
+}
+
+.login h1{
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    margin: 1cm;
+ 
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.login form input{
+    border-style: none;
+    border-left: 4px #000000 solid;
+    width: 25em;
+    text-align: center;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.btnlr{
+    border: 3px solid black;
+    background-color: #00f715 ;
+    padding: 1em 1.5em 1em 1.5em;
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.btn:hover{
+    color: #264653;
+    background-color: rgb(5, 250, 29);
+    border: 1px #57925b solid;
+}
+
+#btnr{
+  border: none;
+  background-color: #00f715;
+  
+}
+
+#divRegister{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+
+
