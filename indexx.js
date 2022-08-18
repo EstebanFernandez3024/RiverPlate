@@ -8,4 +8,3 @@ const ususario = {
 
 
 const acceso = ( Number(ususario.edad)>=18) ? body.style.display = "block" : alert(" Eres menor de edad.")
-
