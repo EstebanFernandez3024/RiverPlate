@@ -22,7 +22,7 @@ function logIn() {
     } else if (usuarioIngresado.password !== password.value) {
         alert("error!contrasenia incorrecta.  vuelve a intentarlo")
     } else {
-        window.location.href = "historia.html"
+        window.location.href = "sesion.html"
         alert("iniciaste correctamente")
     }
 }

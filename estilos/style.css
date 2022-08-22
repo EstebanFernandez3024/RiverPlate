@@ -72,6 +72,16 @@ h1:hover {
           transition-duration: 5s;
 }
 
+.botoncerrar{
+  position: sticky;
+  top: 20px;
+
+  text-decoration: none;
+  border: 8px solid red;
+  color: white;
+  background-color: red;
+ 
+}
 .accordion-item {
   margin: 1cm;
   margin-left: 1cm;
