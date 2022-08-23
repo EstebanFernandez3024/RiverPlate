@@ -55,12 +55,15 @@ registerUser.onclick = (e) => {
     divRegister.style.display = "flex"
     formlogin.style.display = "none"
     titu.style.display = "none"
+    
     const formRegister = document.getElementById("formRegister")
     const inputUser = document.getElementById("inputUser")
     const inputPassword = document.getElementById("inputPassword");
 
     formRegister.onsubmit = (e) => {
         e.preventDefault()
+        window.location.href = "socios.html"
+        alert("ususario creado!")
         let usernameExiste = users.some((userA) => userA.username === inputUser.value)
        
 
