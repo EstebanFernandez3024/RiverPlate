@@ -1,26 +1,4 @@
 
- const productosOficiales = [ "Camisetas", "Camperas", "Pantaloes", "Shorts" ]
- console.log(productosOficiales)
-
- console.log(productosOficiales.push("Botines", "Remeras", "pelotas", "Zapatillas")) 
-
- let productos = [
-    {
-        nombre: "botines",
-        precio: 18999,
-    },
-    {
-        nombre: "camiseta",
-        precio: 11999,
-    },
-    {
-        nombre: "pelota",
-        precio: 5000,
-    },
-    {
-        nombre: "pantalos=n",
-        precio: 9880,
-    },]
 
 /* Formulario */
 
@@ -47,13 +25,12 @@ class Cliente {
 
 formulario.onsubmit = (event) => {
     event.preventDefault()
-    console.log(event)
     clientes.push(new Cliente(inputNombre.value, inputApellido.value, 
         inputEdad.value, inputEmail.value, inputMensaje.value))
     
 }
 inputNombre.onchange = () => {  
-    console.log(inputNombre.value)
+
     if (inputNombre.value.length <= 2){
       swal("ERROR!", "tu nombre es muy corto!", "error");
         inputNombre.style.border = "2px solid red"
