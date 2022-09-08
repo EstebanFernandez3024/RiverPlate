@@ -11,7 +11,7 @@ let users = JSON.parse(localStorage.getItem("users")) || [{
     password: "esteban123",
 }]
 
-console.log(users)
+
 
 
 function logIn() {
@@ -46,8 +46,7 @@ const titu = document.getElementById("titu")
 function register() {
     const nuevoUsuario = new nuevoususario(inputUser.value, inputPassword.value)
     users.push(nuevoUsuario)
-    console.log(nuevoUsuario)
-    console.log(users)
+
 }
 const inicio = document.getElementById("inicio")
 registerUser.onclick = (e) => {
@@ -70,7 +69,7 @@ registerUser.onclick = (e) => {
         function nuevoUsuario() {
             const nuevousuario = new nuevoususario( inputUser.value, inputPassword.value)
             users.push(nuevousuario)
-            console.log(users)
+     
             divRegister.style.display = "none"
             setStorage()
         }

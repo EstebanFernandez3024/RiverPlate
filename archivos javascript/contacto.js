@@ -50,7 +50,7 @@ formulario.onsubmit = (event) => {
     console.log(event)
     clientes.push(new Cliente(inputNombre.value, inputApellido.value, 
         inputEdad.value, inputEmail.value, inputMensaje.value))
-    console.log(clientes)
+    
 }
 inputNombre.onchange = () => {  
     console.log(inputNombre.value)
@@ -64,7 +64,7 @@ inputNombre.onchange = () => {
     }
 }
 inputApellido.onchange = () => {  
-    console.log(inputApellido.value)
+   
     if (inputApellido.value.length <= 2){
         swal("ERROR!", "tu apellido es muy corto!", "error");
         inputApellido.style.border = "2px solid red"
@@ -75,7 +75,7 @@ inputApellido.onchange = () => {
     }
 }
 inputEdad.onchange = () => {  
-    console.log(inputEdad.value)
+
     if ( parseInt(inputEdad.value)<= 17){
         swal("ERROR!", "Eres menor de edad!", "error");
         inputEdad.style.border = "2px solid red"
