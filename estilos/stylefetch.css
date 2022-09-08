@@ -25,7 +25,10 @@ body {
   .icono {
     font-size: 30px;
   }
-  
+  .fetch{
+background-color: red;
+
+  }
   .info-display {
     position: absolute;
     display: none;
